@@ -1,0 +1,596 @@
+{
+  "id": "cdc21b0c-1d02-49d6-ac16-1788469ba880",
+  "version": "2.0",
+  "name": "Beetroot test",
+  "url": "https://beetroot.academy/",
+  "tests": [{
+    "id": "b528bdb5-fcbe-42b7-8c4b-bfa47ef262b4",
+    "name": "HappyPath for \"Напиши нам\"",
+    "commands": [{
+      "id": "76a6564d-bbdc-4e94-b359-9c0fb12df3aa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82e76cc1-74d8-46c1-92df-a8707e6a6a99",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > .empty",
+      "targets": [
+        ["css=a:nth-child(1) > .empty", "css:finder"],
+        ["xpath=//header[@id='top']/div/div/div[3]/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Напиши нам')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aada40d-5dcf-46ef-af1a-1119e159bb34",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='formUsername']",
+      "targets": [
+        ["name=formUsername", "name"],
+        ["css=.position_form_field:nth-child(1) > .greenField", "css:finder"],
+        ["xpath=//input[@name='formUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22277722-6cd2-4d2d-afdc-1e72aef241b6",
+      "comment": "",
+      "command": "type",
+      "target": "name=formUsername",
+      "targets": [
+        ["name=formUsername", "name"],
+        ["css=.position_form_field:nth-child(1) > .greenField", "css:finder"],
+        ["xpath=//input[@name='formUsername']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Тест Тест"
+    }, {
+      "id": "8a0ac39c-62b8-4c03-a688-ec6677b9e4f3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='formPhone']",
+      "targets": [
+        ["name=formPhone", "name"],
+        ["css=.position_form_field:nth-child(3) > .greenField", "css:finder"],
+        ["xpath=//input[@name='formPhone']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div/div/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6064d37-f651-44bf-a0c5-20adaceb1f3e",
+      "comment": "",
+      "command": "store",
+      "target": "+380509999999",
+      "targets": [],
+      "value": "testphone"
+    }, {
+      "id": "5790e979-e09d-4fd5-838b-af45dcc55076",
+      "comment": "",
+      "command": "type",
+      "target": "name=formPhone",
+      "targets": [
+        ["name=formPhone", "name"],
+        ["css=.position_form_field:nth-child(3) > .greenField", "css:finder"],
+        ["xpath=//input[@name='formPhone']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div/div/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "${testphone}"
+    }, {
+      "id": "e27cfa2c-ebe4-49b8-bacf-fd1ab6076613",
+      "comment": "",
+      "command": "click",
+      "target": "name=formEmail",
+      "targets": [
+        ["name=formEmail", "name"],
+        ["css=.position_form_field:nth-child(2) > .greenField", "css:finder"],
+        ["xpath=//input[@name='formEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7da2361e-7862-41d0-90cb-a4f0942343dc",
+      "comment": "",
+      "command": "store",
+      "target": "test@test.com",
+      "targets": [],
+      "value": "testemail"
+    }, {
+      "id": "e49b488e-f38f-42db-b5e0-cc3c1a112ccd",
+      "comment": "",
+      "command": "type",
+      "target": "name=formEmail",
+      "targets": [
+        ["name=formEmail", "name"],
+        ["css=.position_form_field:nth-child(2) > .greenField", "css:finder"],
+        ["xpath=//input[@name='formEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${testemail}"
+    }, {
+      "id": "3f0dbb6b-e18d-447b-8139-ed07b0b0b6c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=formMessage",
+      "targets": [
+        ["name=formMessage", "name"],
+        ["css=.position_form_field:nth-child(4) > .greenField", "css:finder"],
+        ["xpath=//textarea[@name='formMessage']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div/div/form/div/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3899011-90b9-4d09-98a5-1d0e0821f3bc",
+      "comment": "",
+      "command": "type",
+      "target": "name=formMessage",
+      "targets": [
+        ["name=formMessage", "name"],
+        ["css=.position_form_field:nth-child(4) > .greenField", "css:finder"],
+        ["xpath=//textarea[@name='formMessage']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div/div/form/div/div[4]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "testtesttesttesttest"
+    }, {
+      "id": "76c3aa8a-778e-4155-83fd-55ece8b8da78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.position_send",
+      "targets": [
+        ["css=.position_send", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Надіслати')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eff59f34-a8ec-4f52-ac79-c9ea1596e369",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.popupSuccess_wrap",
+      "targets": [],
+      "value": "50000"
+    }, {
+      "id": "61152538-7e02-4148-8921-b199d43996c1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.popupSuccess_wrap",
+      "targets": [
+        ["css=.popupSuccess_wrap", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//main/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5141f47-9d2d-4791-bbb2-64b89a14fc9a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.blackText:nth-child(3)",
+      "targets": [
+        ["css=.blackText:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div[2]/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div/div/p", "xpath:position"]
+      ],
+      "value": "Ми незабаром зв'яжемося з тобою."
+    }]
+  }, {
+    "id": "a8f1bd4b-0bdd-4ca8-9fb3-4057ab33153d",
+    "name": "Verify the \"Вебінари\" button leads to the description page of the selected webinar",
+    "commands": [{
+      "id": "2fecaba0-b245-4b0d-926d-e81a694e5390",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d04a831d-5b19-40bc-b4e4-8e818050ff23",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Події",
+      "targets": [
+        ["linkText=Події", "linkText"],
+        ["css=.list_item:nth-child(3) > .list_link", "css:finder"],
+        ["xpath=//a[contains(text(),'Події')]", "xpath:link"],
+        ["xpath=//header[@id='top']/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/events')]", "xpath:href"],
+        ["xpath=//div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Події')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04652aad-f06f-45ac-b7ad-2efe9eaf46ad",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Вебінари')]",
+      "targets": [
+        ["linkText=Вебінари", "linkText"],
+        ["css=.kind_filter_item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Вебінари')]", "xpath:link"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div[2]/div/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/events/webinars')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Вебінари')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8e37438-f7cc-45d6-889a-ff9046df1f2d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.css-1hwfws3",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c35512b-7b7a-44f7-8501-be5517a05849",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-lg-4:nth-child(1) .blueText:nth-child(1)",
+      "targets": [
+        ["css=.col-lg-4:nth-child(1) .blueText:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div[2]/div/div/div[2]/div/a/p", "xpath:idRelative"],
+        ["xpath=//a/p", "xpath:position"],
+        ["xpath=//p[contains(.,'6 ІТ-інструментів, потрібних кожному новачку')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca2ca7d5-6d4e-4649-ae0a-e5b2b066cb49",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//main/div[3]/div/div",
+      "targets": [
+        ["css=.event_wrap", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/div[3]/div/div", "xpath:idRelative"],
+        ["xpath=//main/div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "73855bec-9490-4a6e-939d-424483031cc6",
+    "name": "Verify the button \"Підписатися\" allows to subscribe in the footer on the page of the site ",
+    "commands": [{
+      "id": "37aec2ed-9e88-42fe-8311-29763c0eabc9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3704f42f-5ae9-427c-b9e4-b3763a066b82",
+      "comment": "",
+      "command": "click",
+      "target": "name=formEmail",
+      "targets": [
+        ["name=formEmail", "name"],
+        ["css=.footer_email", "css:finder"],
+        ["xpath=//input[@name='formEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/footer/div/div/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b151b444-b02e-40c8-b5ab-4c26f5e62e0d",
+      "comment": "",
+      "command": "type",
+      "target": "name=formEmail",
+      "targets": [
+        ["name=formEmail", "name"],
+        ["css=.footer_email", "css:finder"],
+        ["xpath=//input[@name='formEmail']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/footer/div/div/div/div[2]/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test@test.com"
+    }, {
+      "id": "4e09f0bc-66eb-4ab2-9135-a5829abc1df3",
+      "comment": "",
+      "command": "click",
+      "target": "id=<button class=\"empty seoFooterSubscribeButton\" type=\"submit\">Підписатися</button>",
+      "targets": [
+        ["css=.seoFooterSubscribeButton", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/footer/div/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Підписатися')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa8fe137-5988-4c66-8fff-be35346340a5",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.popupSuccess_icon path",
+      "targets": [
+        ["css=.popupSuccess_icon path", "css:finder"]
+      ],
+      "value": "did match"
+    }, {
+      "id": "7bef9c8c-8553-46f6-9fa9-b16a576e6d1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.empty:nth-child(4)",
+      "targets": [
+        ["css=.empty:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/footer/div[2]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "18261c86-dc2b-48b7-bf93-1d8f1f544b31",
+    "name": "Verify the \"Історія\" button from the \"Про нас\" dropdown leads to the academy history page with chronology",
+    "commands": [{
+      "id": "0e318fb8-8fe4-453c-93ab-7e8fca96f1d5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7683e52-8c43-4bb2-901e-06e705ae79bd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Історія",
+      "targets": [
+        ["linkText=Історія", "linkText"],
+        ["css=.list_item:nth-child(4) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Історія')]", "xpath:link"],
+        ["xpath=//header[@id='top']/div/div/ul/li[4]/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/history')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Історія')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee62d50e-94b5-46b4-a8cf-211545123e08",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//h3[contains(.,'2014')]",
+      "targets": [
+        ["css=.history_old_desc > .titleSmall:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div[2]/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'2014')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b90e1531-d1b0-4d0a-b8e6-4df2cc77af42",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//h3[contains(.,'2015')]",
+      "targets": [
+        ["css=.history_oldSecond .titleSmall", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div[3]/div[2]/h3", "xpath:idRelative"],
+        ["xpath=//div[2]/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'2015')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b173b37d-7270-4482-9848-ce32b0887f6f",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//h3[contains(.,'2016')]",
+      "targets": [
+        ["css=.history_old_desc > .titleSmall:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div[4]/div/h3", "xpath:idRelative"],
+        ["xpath=//div[4]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'2016')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c195886-01dd-40b7-bb4f-d857296cb2e1",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//h3[contains(.,'2017')]",
+      "targets": [
+        ["css=.history_oldFour_desc > .titleSmall", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div[5]/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'2017')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0892c88-4633-4ab8-be5c-5d97f15114f2",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//h3[contains(.,'2018')]",
+      "targets": [
+        ["css=.history_oldFive_desc > .titleSmall", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/main/div/div[6]/div/h3", "xpath:idRelative"],
+        ["xpath=//div[6]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'2018')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c5d296b3-7d92-45d2-890c-e3d0b61f2cbf",
+    "name": "Verify the button \"Почати навчання\" on the page of the any course leads to the form of registration",
+    "commands": [{
+      "id": "f97728db-dd69-4d3b-87de-a526d4cf2c5a",
+      "comment": "",
+      "command": "open",
+      "target": "https://beetroot.academy/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fd35991-f0b3-442c-af4e-6422a44f05ca",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.list_item-online span",
+      "targets": [
+        ["css=a:nth-child(1) > .empty", "css:finder"],
+        ["xpath=//header[@id='top']/div/div/div[3]/a/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Напиши нам')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec7e1b88-c2e9-4400-bc29-dfc8905de98d",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "linkText=Технічні",
+      "targets": [
+        ["css=.list_item-online span", "css:finder"],
+        ["xpath=//header[@id='top']/div/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Онлайн курси')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87aee435-8566-4348-8278-a404a211dfbf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=QA Manual",
+      "targets": [
+        ["linkText=QA Manual", "linkText"],
+        ["css=li:nth-child(1) > .listUnderLinks > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'QA Manual')]", "xpath:link"],
+        ["xpath=//header[@id='top']/div/div/ul/li/ul/li/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/online/qa-manual')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'QA Manual')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "887b3fcf-13e6-4b41-8e92-899a4a50a1b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(1) > .seoStartLearningCoursePageButton",
+      "targets": [
+        ["css=a:nth-child(1) > .seoStartLearningCoursePageButton", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/div[3]/div/div/div/div/div[5]/a/button", "xpath:idRelative"],
+        ["xpath=//div[5]/a/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Почати навчання')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9493",
+      "windowTimeout": 2000
+    }, {
+      "id": "61937f92-2baa-4648-8daf-ad42f0e461f2",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9493}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd7fdc92-058a-4158-85c1-30f9131dd0c3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.jss89",
+      "targets": [
+        ["css=.jss89", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/form/div[7]", "xpath:idRelative"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec5d4a05-c4ce-42af-b0e3-d03e5df370a0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.jss89",
+      "targets": [
+        ["css=.jss89", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div/div/div[2]/div/form/div[7]", "xpath:idRelative"],
+        ["xpath=//div[7]", "xpath:position"]
+      ],
+      "value": "CREATE ACCOUNT"
+    }]
+  }, {
+    "id": "25ccea0a-c950-406b-beb3-956e4cc898ee",
+    "name": "Verify the button \"Надіслати\" does not work if the fields have an empty value when the user wants to get advice on the course page",
+    "commands": [{
+      "id": "45110c66-5027-4fba-898b-57aba195cd48",
+      "comment": "",
+      "command": "open",
+      "target": "https://beetroot.academy/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49555069-9e6a-4ad9-8c62-0988a9cb7a19",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=QA Manual",
+      "targets": [
+        ["linkText=QA Manual", "linkText"],
+        ["css=li:nth-child(1) > .listUnderLinks > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'QA Manual')]", "xpath:link"],
+        ["xpath=//header[@id='top']/div/div/ul/li/ul/li/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/courses/online/qa-manual')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'QA Manual')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c71d2998-bc44-4a4b-9df7-e9734817e17c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.seoTopComeVisitUsOpenPopupOnline",
+      "targets": [
+        ["css=.seoTopComeVisitUsOpenPopupOnline", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/div[3]/div/div/div/div/div[5]/a[2]/button", "xpath:idRelative"],
+        ["xpath=//a[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Отримати консультацію')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5b7060f-928f-4a33-b963-8e34e89b14e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.popupForm_box",
+      "targets": [
+        ["css=.popupForm_box", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/div[3]/div[2]/div/div/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9861b5d7-8b74-41c0-b3b7-8b805bd7e8b8",
+      "comment": "",
+      "command": "verifyNotEditable",
+      "target": "xpath=//*[@id=\"gatsby-focus-wrapper\"]/div/main/div[3]/div[2]/div/div/div[1]/form/button",
+      "targets": [
+        ["css=.popupForm_box", "css:finder"],
+        ["xpath=//div[@id='gatsby-focus-wrapper']/div/main/div[3]/div[2]/div/div/div/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "74999c1d-5819-448e-9445-bdf5cfe8c21e",
+    "name": "MainPage",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b528bdb5-fcbe-42b7-8c4b-bfa47ef262b4", "18261c86-dc2b-48b7-bf93-1d8f1f544b31", "73855bec-9490-4a6e-939d-424483031cc6"]
+  }, {
+    "id": "4d5e57e1-c668-4892-a931-abc86415466f",
+    "name": "Page Події",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a8f1bd4b-0bdd-4ca8-9fb3-4057ab33153d"]
+  }, {
+    "id": "da9154c2-1b08-4de4-be22-6ec69a9715d8",
+    "name": "Courses",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["25ccea0a-c950-406b-beb3-956e4cc898ee", "c5d296b3-7d92-45d2-890c-e3d0b61f2cbf"]
+  }],
+  "urls": ["https://beetroot.academy/"],
+  "plugins": []
+}
